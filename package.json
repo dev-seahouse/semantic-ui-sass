@@ -8,9 +8,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/doabit/semantic-ui-sass.git"
+    "url": "git://github.com/ikhilko/semantic-ui-sass.git"
   },
   "bugs": {
-    "url": "https://github.com/doabit/semantic-ui-sass/issues"
+    "url": "https://github.com/ikhilko/semantic-ui-sass/issues"
   }
 }
