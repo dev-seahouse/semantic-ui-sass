@@ -1,14 +1,14 @@
 {
   "name": "semantic-ui-sass",
-  "version": "2.1.8",
+  "version": "2.2.0",
   "title": "Semantic UI",
   "description": "Sass port of Semantic UI.",
-  "homepage": "http://www.semantic-ui.com",
-  "author": "ikhilko <ikhilko.dev@gmail.com>",
+  "homepage": "https://github.com/dev-seahouse/semantic-ui-sass",
+  "author": "ikhilko <ikhilko.dev@gmail.com>, Kenan <sayhi.kenan@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ikhilko/semantic-ui-sass.git"
+    "url": "git://github.com/dev-seahouse/semantic-ui-sass.git"
   },
   "bugs": {
     "url": "https://github.com/ikhilko/semantic-ui-sass/issues"

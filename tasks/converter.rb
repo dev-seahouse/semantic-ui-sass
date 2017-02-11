@@ -108,6 +108,8 @@ private
 
   def convert(file)
     file = replace_fonts_url(file)
+    file = replace_import_font_url(file)
+    file = replace_font_family(file)
     file = replace_image_urls(file)
     file = replace_image_paths(file)
 
@@ -144,7 +146,17 @@ private
   end
 
   def replace_fonts_url(less)
-    less.gsub(/url\(\"\.\.\/themes\/default\/assets\/fonts\/?(.*?)\"\)/) {|s| "font-url(\"semantic-ui/#{$1}\")" }
+    less.gsub(/url\(\"\.\/\.\.\/themes\/default\/assets\/fonts\/?(.*?)\"\)/) {|s| "font-url(\"semantic-ui/#{$1}\")" }
+  end
+
+  def replace_font_family(less)
+    less.gsub("font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif", 'font-family: $font-family')
+  end
+
+  def replace_import_font_url(less)
+    less.gsub("@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');", '@if $import-google-fonts {
+  @import url($font-url);
+}')
   end
 
   def replace_image_urls(less)
